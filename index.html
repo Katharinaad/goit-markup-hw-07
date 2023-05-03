@@ -23,6 +23,7 @@
   </head>
   <body>
     <!-- Header -->
+
     <header class="page-header">
       <div class="header-container container">
         <nav class="navigation">
@@ -41,8 +42,15 @@
             <li class="address-item-phone"><a class="contact-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icon.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
     <main>
       <!-- Hero -->
 
@@ -55,7 +63,7 @@
 
       <!-- Modal window -->
 
-      <div class="backdrop is-hidden" data-modal>
+      <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal-close-btn" type="button" data-modal-close>
             <svg class="modal-icon" width="8" height="8"><use href="./images/icon.svg#icon-close-black"></use></svg>
@@ -92,11 +100,11 @@
             <button class="modal-btn" type="submit">Send</button>
           </form>
         </div>
-      </div>
+      </div> -->
 
       <!-- Services -->
 
-      <section class="section-services section">
+      <!-- <section class="section-services section">
         <div class="container">
           <h2 class="section-title-hidden" hidden>Our Services</h2>
           <ul class="feature-services list">
@@ -138,7 +146,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Examples -->
       <section class="section-examples section">
@@ -153,7 +161,7 @@
       </section>
 
       <!-- Team members -->
-      <section class="section-team section">
+      <!-- <section class="section-team section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-members list">
@@ -307,10 +315,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Customers -->
-      <section class="section-customers section">
+      <!-- <section class="section-customers section">
         <div class="container">
           <h2 class="section-title-customers">Customers</h2>
           <ul class="customers list">
@@ -358,11 +366,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer -->
-    <footer class="section-footer section">
+    <!-- <footer class="section-footer section">
       <div class="footer-container container">
         <div class="footer-logo">
           <a class="logo-web-footer link" href="./index.html">Web<span class="logo-studio-footer link">Studio</span></a>
@@ -417,10 +425,76 @@
             </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
+    <!-- Mobile menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg fill="currentColor" width="8" height="8">
+          <use href="./images/icon.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li>
+          <a class="link" href="">Studio</a>
+        </li>
+        <li>
+          <a class="link" href="">Portfolio</a>
+        </li>
+        <li>
+          <a class="link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="socials-item-footer">
+          <a class="socials-link-footer link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram icon">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item-footer">
+          <a class="socials-link-footer link" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram icon">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item-footer">
+          <a class="socials-link-footer link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram icon">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item-footer">
+          <a class="socials-link-footer link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram icon">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/animation.js"></script>
     <script src="./js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
