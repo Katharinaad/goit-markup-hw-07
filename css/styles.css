@@ -1349,6 +1349,12 @@ body {
   gap: 40px;
 }
 
+@media only screen and (max-width: 767px) {
+  .website-menu {
+    display: none;
+  }
+}
+
 /* .website-menu .link {
   display: block;
   padding-top: 24px;
